@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo-container">
+      <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+      <h1 class="logo">Kyle Book | My Portfolio</h1>
+    </div>
+    <nav>
+      <a href="#profile">My Profile</a>
+      <a href="#education">Education</a>
+      <a href="#trainings">Trainings</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contacts</a>
+    </nav>
+  </div>
+</header>
+
+<section id="profile">
+  <h2>Profile</h2>
+  <p>Hello I'm Kyle G. Book. I'm 20 years old. I live in Purok Nipa, Sitio Lourdes, Poblacion, Liloan, Cebu. I'm passionate about expanding my knowledge in web development.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <button class="flexible">Computer Engineering Technology</button>
+  <div class="content">
+    <p>CITE Technical Institute</p>
+    <p>Purok 2, San Jose, Cebu City</p>
+    <p>S.Y. 2023 - Present</p>
+  </div>
+</section>
+
+<section id="trainings">
+  <h2>Trainings</h2>
+  <button class="flexible">Work Immersion</button>
+  <div class="content">
+    <p>Atty. Cynthia Cañete Law Office | Looc, Poblacion, Lilo-an, Cebu | March 2023 – April 2023 | Works assigned: Office Clerk</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-card" data-title="To-Do List (Java)" data-description="A console-based To-Do List application built using Java. Features include adding tasks, marking them as completed, and deleting tasks.">
+    <h3>To-Do List (Java)</h3>
+    <p>Click to view more details</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
